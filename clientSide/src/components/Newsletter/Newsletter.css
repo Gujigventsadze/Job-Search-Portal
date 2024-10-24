@@ -1,0 +1,82 @@
+.newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    box-sizing: border-box;
+    padding: 3rem 1rem;
+    width: 60%;
+    box-shadow: 0 0 4px gray;
+    border-radius: 2rem;
+    background-image: url("../../assets/pics/newsletterBG.png");
+    background-size: cover;   
+}
+.newsletter-img img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.email-submit {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.email-submit input {
+    box-sizing: border-box;
+    padding: 1rem 3rem 1rem 2rem;
+    width: 40%;
+    font-size: 1.5rem;
+    font-family: "Oswald";
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 3px gray;
+}
+.email-submit button {
+    border: none;
+    box-shadow: 0 0 3px gray;
+    width: 10%;
+    font-family: "Oswald";
+    font-size: 1.2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    cursor: pointer;
+    transition: opacity 0.15s;
+}
+.email-submit button:hover {
+    opacity: 0.7;
+}
+
+.email-submit button:active {
+    opacity: 0.5;
+}
+
+.newsletter-not {
+    font-size: 1.7rem;
+    font-family: "Oswald";
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive Layout */
+
+/* Small Laptop */
+@media (max-width: 1025px) {
+    .newsletter-container {
+        width: 90%;
+    }
+}
+
+/* Mobile */
+@media(max-width: 426px) {
+    .email-submit input {
+        width: 200px;
+    }
+    .email-submit button {
+        width: 100px;
+    }
+
+}

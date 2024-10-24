@@ -1,0 +1,42 @@
+#about-section {
+    display: flex;
+    justify-content: center;
+}
+.about-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 3rem;
+    font-family: "Oswald";
+}
+.about-title {
+    font-size: 4rem;
+}
+.about-body {
+    font-size: 20px;
+    text-align: justify;
+}
+.about-links {
+    display: flex;
+    gap: 10px;
+}
+.about-links a {
+    font-size: 3rem;
+    color: black;
+    transition: color 0.15s ease-in-out;
+}
+.about-links a:hover {
+    color: gray;
+}
+.about-links a:active {
+    color: hsl(0, 0%, 70%);
+}
+
+/* Responsive Layout */
+
+@media(max-width: 1025px) {
+    .about-page-container {
+        width: 90%;
+    }
+}

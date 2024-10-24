@@ -1,0 +1,54 @@
+.jobbox-container {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 1rem 1rem;
+    font-family: "Oswald";
+    box-shadow: 0 0 5px gray;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 1rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    color: black;
+    text-decoration: none;
+}
+.jobbox-title {
+    font-size: 2.5rem;
+}
+.jobbox-company-name {
+    font-size: 1.2rem;
+    color: gray;
+}
+.jobbox-salary {
+    font-size: 1.3rem;
+}
+.jobbox-bottom {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.jobbox-container::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 5px;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+    z-index: 1;
+}
+.jobbox-container:hover::before {
+    width: 100%;
+}
+
+/* Responsive Layout */
+
+@media (max-width: 426px) {
+    .jobbox-container {
+        width: 280px;
+    }
+}
